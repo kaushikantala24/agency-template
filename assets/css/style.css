@@ -1,0 +1,183 @@
+/* ======= Root Variables for Theme Colors ======= */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --hover-color: #0051a8;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --dark-text: #FFFFFF;
+    --dark-bg: #222222;
+}
+
+/* ====== Poppins Font (Local) ====== */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ====== Apply Global Font ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ======= ThemeForest Standard Global Reset ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+/* ======= Apply Colors to Elements ======= */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+:root {
+    --color-black-300: #333;
+    --color-white-100: #fff;
+    --color-black-400: #0b1423;
+}
+
+.switch {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9;
+    margin-left: 5rem;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.switch-light, .switch-dark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.switch-light {
+    color: var(--color-black-300);
+}
+
+body.darkmode {
+    color: var(--color-white-100);
+    background-color: var(--color-black-400);
+}
+
+.darkmode .switch-light {
+    opacity: 0;
+    font-size: 0rem;
+}
+
+.switch-dark {
+    color: var(--color-white-100);
+    opacity: 0;
+    font-size: 0rem;
+}
+
+.darkmode .switch-dark {
+    opacity: 1;
+    font-size: 1.45rem;
+}
+
+

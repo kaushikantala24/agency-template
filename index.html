@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency One-Page Template</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">My Agency</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    <button class="switch" id="switch">
+                        <i class="switch-light bx fa-regular fa-moon-over-sun"></i>
+                        <i class="fa-regular fa-moon"></i>
+                        <i class="switch-dark bx bx-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="services" class="container services text-center">
+        <h2>Our Services</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h4>Web Design</h4>
+                <p>Modern and responsive website design.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Development</h4>
+                <p>Custom website development solutions.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>SEO Optimization</h4>
+                <p>Improve your search rankings with SEO.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="container portfolio text-center">
+        <h2>Our Work</h2>
+        <div class="row mt-4">
+            <div class="col-md-4"><img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 1">
+                <p>Project 1</p>
+            </div>
+            <div class="col-md-4"><img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 2">
+                <p>Project 2</p>
+            </div>
+            <div class="col-md-4"><img src="https://via.placeholder.com/300" class="img-fluid" alt="Project 3">
+                <p>Project 3</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="container testimonials text-center">
+        <h2>What Our Clients Say</h2>
+        <p>"Great service! Highly recommend." - Client A</p>
+        <p>"Very professional team." - Client B</p>
+    </section>
+    <section id="pricing" class="container pricing text-center">
+        <h2>Pricing Plans</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 pricing-table">
+                <h4>Basic</h4>
+                <p>$99 - One-page website</p>
+            </div>
+            <div class="col-md-4 pricing-table">
+                <h4>Standard</h4>
+                <p>$199 - Multi-page website</p>
+            </div>
+            <div class="col-md-4 pricing-table">
+                <h4>Premium</h4>
+                <p>$299 - E-commerce website</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container contact text-center">
+        <h2>Contact Us</h2>
+        <p>Email: contact@myagency.com | Phone: +91 9876543210</p>
+        <div class="contact-form mt-4">
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/fontawesome.min.js"></script> -->
+    <script src="assets/js/main.js"></script>
+</body>
+<script>
+    // function toggleDarkMode() {
+    //     document.body.classList.toggle("dark-mode");
+    // }
+
+    // Dark and Light Mode on Switch Click
+    document.addEventListener("DOMContentLoaded", () => {
+        const darkSwitch = document.getElementById("switch");
+        document.body.classList.toggle("darkmode", localStorage.theme === "dark");
+        darkSwitch.onclick = () => localStorage.theme = document.body.classList.toggle("darkmode") ? "dark" : "light";
+    });
+
+</script>
+
+</html>
